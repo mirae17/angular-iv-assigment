@@ -1,0 +1,91 @@
+/* Background Section */
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  text-align: left;
+  background-size: cover;
+  background-position: center;
+  padding-left: 5vw; /* Adds left padding */
+}
+
+/* Overlay */
+.bg-opacity-50 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text Styling */
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 600px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  padding-right: 10vw;
+}
+
+/* CTA Button */
+a {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background: #f0f0f0;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.get-in-touch-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #e5e7eb, #ffffff); /* Soft gradient */
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-decoration: none; /* Removes underline */
+  transition: all 0.3s ease-in-out;
+}
+
+.get-in-touch-btn:hover {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #d1d5db
+  ); /* Lighter hover effect */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.15); /* More depth on hover */
+}

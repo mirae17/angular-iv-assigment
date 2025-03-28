@@ -1,0 +1,80 @@
+/* General styles */
+body {
+  font-family: "Poppins", sans-serif; /* Elegant, modern font */
+  background-color: #f8f9fa; /* Soft background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for all documents */
+.document-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Individual document card */
+.document-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #ddd;
+}
+
+.document-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Document Image */
+.document-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Document Details */
+.document-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.document-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50; /* Dark classic color */
+  margin-bottom: 12px;
+}
+
+.document-body p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button Style */
+.document-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.document-link:hover {
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  transform: scale(1.05);
+}

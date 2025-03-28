@@ -1,0 +1,304 @@
+{
+  "response": "SUCCESS",
+  "content": {
+      "id": 147,
+      "projectName": "BAMBOO HILLS RESIDENCE",
+      "projectShortName": "PS 1",
+      "currency": "MYR",
+      "countryCode": "60",
+      "phoneNo": "10225155",
+      "tenure": "LEASEHOLD",
+      "propertyCategory": "TWO_STOREY_TERRACE_HOUSE",
+      "propertyType": [
+          "INDUSTRIAL",
+          "RESIDENTIAL"
+      ],
+      "sizeUnit": "SQUARE_FEET",
+      "address1": "AIMAN DANIEL RESIDENCE",
+      "address2": "Jalan Kota Laksamana 2/17",
+      "address3": "Taman Kota Laksamana",
+      "country": "MYS",
+      "state": "04",
+      "city": "Melaka",
+      "postalCode": "75300",
+      "longitude": "102.2128698",
+      "latitude": "2.2963816",
+      "descriptionTitle": "A Modern Sanctuary Where Nature Meets Elegance",
+      "descriptionSubTitle": "Discover Bamboo Hills, a freehold development with a nearby MRT station and grocery store at your doorstep-an ideal place to call home.",
+      "descriptionOverview": "",
+      "logo": "https://www.malaysiapropertyreviews.com/wp-content/uploads/2024/03/Bamboo-Hills-Residences-2.webp",
+      "sitePlan": null,
+      "landSize": 0.0,
+      "metricUnit": null,
+      "bumiDiscount": null,
+      "totalUnit": 28,
+      "showStoreyPlan": false,
+      "showSitePlan": false,
+      "projectDetails": [
+          {
+              "id": 90,
+              "metId": 5,
+              "type": "PROJECT_DETAILS",
+              "name": "Freehold",
+              "description": "Provides long-term value and security for its residents",
+              "param1": "1183",
+              "status": 1,
+              "createdDatetime": "2025-01-22 17:13:44",
+              "updatedDatetime": "2025-01-22 17:13:44",
+              "imageUrl": "https://www.shutterstock.com/image-vector/house-logo-template-design-vector-600nw-741515455.jpg"
+          },
+          {
+              "id": 99,
+              "metId": 5,
+              "type": "PROJECT_DETAILS",
+              "name": "Dedicated Linked-bridge",
+              "description": "Covered bridge connection 80m to MRT station Kentonmen",
+              "param1": "1183",
+              "status": 1,
+              "createdDatetime": "2025-02-06 17:02:46",
+              "updatedDatetime": "2025-02-06 17:02:46",
+              "imageUrl": "https://media.istockphoto.com/id/1372328763/vector/bus-icon-logo-design-vector-template-illustration.jpg?s=612x612&w=0&k=20&c=jHSehLpopytQXRZ0ISwbK7GRMnHc_hOK8e8XFMIJBNg="
+          },
+          {
+              "id": 100,
+              "metId": 5,
+              "type": "PROJECT_DETAILS",
+              "name": "Doorstep to Grocer",
+              "description": "Enjoy conveniences by doorstep to approx. 120,000 sqft. grocer, retail area and a food court",
+              "param1": "1183",
+              "status": 1,
+              "createdDatetime": "2025-02-06 17:03:04",
+              "updatedDatetime": "2025-02-06 17:03:04",
+              "imageUrl": "https://i.fbcd.co/products/original/3-298b62e941739f45fe97b37ad2674d30d130ac34425b71101bc35f588449ed09.jpg"
+          }
+      ],
+      "propertyInfo": [
+          {
+              "id": 85,
+              "metId": 5,
+              "type": "UNIT_DETAILS",
+              "name": "27-acre​",
+              "description": "Township Development​",
+              "param1": "971",
+              "status": 1,
+              "createdDatetime": "2025-01-22 17:02:20",
+              "updatedDatetime": "2025-01-22 17:02:20",
+              "imageUrl": null
+          },
+          {
+              "id": 86,
+              "metId": 5,
+              "type": "UNIT_DETAILS",
+              "name": "16-acre",
+              "description": "Lush Greenery",
+              "param1": "972",
+              "status": 1,
+              "createdDatetime": "2025-01-22 17:05:59",
+              "updatedDatetime": "2025-01-22 17:05:59",
+              "imageUrl": null
+          },
+          {
+              "id": 87,
+              "metId": 5,
+              "type": "UNIT_DETAILS",
+              "name": "only 3",
+              "description": "Residential Towers",
+              "param1": "973",
+              "status": 1,
+              "createdDatetime": "2025-01-22 17:06:18",
+              "updatedDatetime": "2025-01-22 17:06:18",
+              "imageUrl": null
+          },
+          {
+              "id": 103,
+              "metId": 5,
+              "type": "UNIT_DETAILS",
+              "name": ">11",
+              "description": "Dining Pavilions,Commercial & Retails",
+              "param1": "1357",
+              "status": 1,
+              "createdDatetime": "2025-02-24 16:22:21",
+              "updatedDatetime": "2025-02-24 16:22:21",
+              "imageUrl": null
+          }
+      ],
+      "gallery": [
+          "https://bamboohillskl.com/img/asset/YXNzZXRzL2dhbGxlcnkvSU1HTDAwNjRfMS5qcGc=?w=800&s=681ba4d9a85a469c6a1ac98231c69e32",
+          "https://bamboohillskl.com/img/asset/YXNzZXRzL2dhbGxlcnkvSU1HTDE5NDguanBn?w=1400&fit=crop&s=4d7fa910235c45bc3d5c78fcda72ecd8",
+          "https://bamboohillskl.com/img/asset/YXNzZXRzL2dhbGxlcnkvSU1HTDE1MzUuanBn?w=800&s=efdcdbcefadac97b56306bda3b2f1054",
+          "https://bamboohillskl.com/img/asset/YXNzZXRzL2dhbGxlcnkvSU1HTDA2NzEuanBn?w=1400&fit=crop&s=5309c1d81affd00827910a4f79a444f1",
+          "https://uoaproperty.com/wp-content/uploads/2024/03/Bamboo-Hills-Gallery-2.jpg"
+      ],
+      "layouts": [
+          {
+              "id": 25,
+              "piId": 147,
+              "metId": 5,
+              "name": "TYPE C1",
+              "buildUpArea": "250",
+              "sqft": 904,
+              "unit": null,
+              "desc": "",
+              "status": 1,
+              "createdDatetime": "2025-01-23 16:14:05",
+              "updatedDatetime": "2025-01-23 16:14:05",
+              "specifications": null,
+              "url": "https://newlaunch-my.ippstatic.com/live/MY/showunit/640/6725_657755_1714961003.jpg",
+              "room": [
+                "3 Bedrooms",
+                "2 Bathroom"
+              ],
+              "sizeUnit": "SQUARE_FEET",
+              "totalUnit": 15.0,
+              "availableUnit": 7.0
+          },
+          {
+              "id": 26,
+              "piId": 147,
+              "metId": 5,
+              "name": "TYPE C2",
+              "buildUpArea": "665",
+              "sqft": 904,
+              "unit": null,
+              "desc": "",
+              "status": 1,
+              "createdDatetime": "2025-01-23 16:14:27",
+              "updatedDatetime": "2025-01-23 16:14:27",
+              "specifications": null,
+              "url": "https://static.wixstatic.com/media/6e868e_163c015bee5746c388a75336045ce954~mv2.jpg/v1/fill/w_304,h_405,q_90,enc_avif,quality_auto/6e868e_163c015bee5746c388a75336045ce954~mv2.jpg",
+              "room": [
+                "3 Bedrooms",
+                "2 Bathroom"
+              ],
+              "sizeUnit": "SQUARE_FEET",
+              "totalUnit": 6.0,
+              "availableUnit": 3.0
+          },
+          {
+              "id": 27,
+              "piId": 147,
+              "metId": 5,
+              "name": "TYPE A1",
+              "buildUpArea": "700",
+              "sqft": 603,
+              "unit": null,
+              "desc": "",
+              "status": 1,
+              "createdDatetime": "2025-01-23 16:14:46",
+              "updatedDatetime": "2025-01-23 16:14:46",
+              "specifications": null,
+              "url": "https://my1-cdn.pgimgs.com/project-listing-unit/5502/PUFLO.246059102.V550.jpg",
+              "room": [
+                "2 Bedrooms",
+                "1 Bathroom"
+              ],
+              "sizeUnit": "SQUARE_FEET",
+              "totalUnit": 4.0,
+              "availableUnit": 1.0
+          },
+          {
+              "id": 32,
+              "piId": 147,
+              "metId": 5,
+              "name": "TYPE C3",
+              "buildUpArea": "235",
+              "sqft": 904,
+              "unit": null,
+              "desc": "",
+              "status": 1,
+              "createdDatetime": "2025-02-19 09:37:17",
+              "updatedDatetime": "2025-02-19 09:37:17",
+              "specifications": null,
+              "url": "https://my1-cdn.pgimgs.com/project-listing-unit/5510/PUFLO.246059140.R1500X1500.jpg",
+              "room": [
+                "3 Bedrooms",
+                "2 Bathroom"
+              ],
+              "sizeUnit": "SQUARE_FEET",
+              "totalUnit": 3.0,
+              "availableUnit": 2.0
+          }
+      ],
+      "documents": [
+          {
+              "id": 120,
+              "piId": 147,
+              "metId": 5,
+              "fileType": "DOCUMENT",
+              "atId": 1036,
+              "value": "doc-01",
+              "tags": [
+                  "testing"
+              ],
+              "param1": "",
+              "status": 1,
+              "createdBy": 12,
+              "updatedBy": 12,
+              "createdDatetime": "2025-01-23 15:53:35",
+              "updatedDatetime": "2025-01-23 15:53:35",
+              "url": "https://psales-ms.oss-ap-southeast-3.aliyuncs.com/sales1/PROJECT_DOCUMENT/556653d0b8d5459398b0b855dd202315.pdf",
+              "fileSize": null,
+              "logs": []
+          },
+          {
+              "id": 126,
+              "piId": 147,
+              "metId": 5,
+              "fileType": "DOCUMENT",
+              "atId": 1048,
+              "value": "PROJECT-01",
+              "tags": [
+                  "testing"
+              ],
+              "param1": "",
+              "status": 1,
+              "createdBy": 12,
+              "updatedBy": 12,
+              "createdDatetime": "2025-01-23 16:05:32",
+              "updatedDatetime": "2025-01-23 16:05:32",
+              "url": "https://psales-ms.oss-ap-southeast-3.aliyuncs.com/sales1/PROJECT_DOCUMENT/e08596fcdc7b415f9869dc9812d37c14.pdf",
+              "fileSize": null,
+              "logs": []
+          },
+          {
+              "id": 127,
+              "piId": 147,
+              "metId": 5,
+              "fileType": "DOCUMENT",
+              "atId": 1049,
+              "value": "AGREEMENT",
+              "tags": [
+                  "testing"
+              ],
+              "param1": "",
+              "status": 1,
+              "createdBy": 12,
+              "updatedBy": 12,
+              "createdDatetime": "2025-01-23 16:05:48",
+              "updatedDatetime": "2025-01-23 16:05:48",
+              "url": "https://psales-ms.oss-ap-southeast-3.aliyuncs.com/sales1/PROJECT_DOCUMENT/d571104352c64b48894680c82adc4e5f.pdf",
+              "fileSize": null,
+              "logs": []
+          }
+      ],
+      "map": [
+          {
+              "id": 125,
+              "piId": 147,
+              "metId": 5,
+              "fileType": "MAP",
+              "atId": 1042,
+              "value": "",
+              "tags": null,
+              "param1": "",
+              "status": 1,
+              "url": "https://psales-ms.oss-ap-southeast-3.aliyuncs.com/sales1/PROJECT_DOCUMENT/dff11eb1573343f0844c1f81fd77e4f4.webp",
+              "fileSize": null,
+              "logs": []
+          }
+      ]
+  },
+  "content2": null,
+  "content3": null,
+  "pagination": null
+}

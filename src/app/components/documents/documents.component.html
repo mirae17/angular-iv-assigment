@@ -1,0 +1,20 @@
+<section>
+  <div *ngIf="documents.length > 0; else noDocuments">
+  <h2 class="section-title">Documents</h2>
+  <div class="document-container">
+    <div *ngFor="let doc of documents" class="document-card">
+      
+      <div class="document-body">
+        <h3>{{ doc.value }}</h3>
+       
+        <a [href]="doc.url" target="_blank" class="document-link">View Document</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #noDocuments>
+  <p class="no-documents">No documents available.</p>
+</ng-template>
+</section>
+

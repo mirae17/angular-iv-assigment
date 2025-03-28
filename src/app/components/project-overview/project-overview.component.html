@@ -1,0 +1,27 @@
+<section 
+  class="relative w-full h-screen flex items-center text-white bg-cover bg-center"
+  [style.backgroundImage]="'url(' + (project?.logo || 'assets/default-bg.jpg') + ')'">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Content Wrapper (Now Left-Aligned) -->
+  <div class="relative z-10 w-full max-w-3xl p-10 ml-16">
+    
+    <!-- Project Name -->
+    <h1 class="text-6xl font-extrabold fadeIn text-left">
+      {{ project?.projectName || 'Loading...' }}
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="mt-4 text-xl fadeIn text-left">{{ project?.descriptionTitle || '' }}</p>
+    <p class="mt-2 text-lg fadeIn text-left opacity-80">{{ project?.descriptionSubTitle || '' }}</p>
+
+    <!-- Call to Action -->
+  <a href="#contact" class="get-in-touch-btn">
+    Get in Touch
+</a>
+
+
+  </div>
+</section>

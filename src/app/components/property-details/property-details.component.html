@@ -1,0 +1,32 @@
+<div class="container">
+ 
+  <!-- Project Section -->
+  <section class="project-section" id="bg1">
+    <h2 class="section-title">Project Details</h2>
+    <div class="project-list">
+      <div class="project-card" *ngFor="let info of projectDetails">
+        <img *ngIf="info.imageUrl" [src]="info.imageUrl" alt="{{ info.name }}" class="project-image" />
+        <div class="project-info">
+          <h3 class="project-name">{{ info.name }}</h3>
+         
+          <p class="project-description">{{ info.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-section" id="bg">
+    <h2 class="section-title">Property Info</h2>
+    <div class="property-list">
+      <div class="property-card" *ngFor="let info of propertyInfo">
+        <img *ngIf="info.imageUrl" [src]="info.imageUrl" alt="{{ info.name }}" class="property-image" />
+        <div class="property-info">
+          <h3 class="property-name">{{ info.name }}</h3>
+         
+          <p class="property-description">{{ info.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
