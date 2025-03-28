@@ -12,15 +12,23 @@ import { Project, ProjectResponse } from '../../models/project.model';
 })
 export class ProjectOverviewComponent implements OnInit {
   project: Project | null = null; 
+errorMessage:String | null = null;
 
   constructor(private jsonDataService: JsonDataService) {}
 
   ngOnInit(): void {
-    this.jsonDataService.getProjectData().subscribe((data: any) => {
-      if (data?.content) {
-        this.project = data.content; 
-      } else {
-        console.error("Invalid JSON structure:", data);
+    this.jsonDataService.getProjectData().subscribe({
+      next: (data: Project) => {
+        if (data) {
+          this.project = data;
+        } else {
+          console.error("No project data received");
+          this.errorMessage = "No project data available.";
+        }
+      },
+      error: (err) => {
+        console.error("Error in subscription:", err);
+        this.errorMessage = "Failed to load project data. Please try again later.";
       }
     });
   }

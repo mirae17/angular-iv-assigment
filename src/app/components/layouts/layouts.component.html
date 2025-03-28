@@ -1,14 +1,18 @@
 <section class="layouts-section">
   <div class="swiper mySwiper">
-  <h2 class="text-4xl font-semibold text-center mb-6">Layouts</h2>
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let layout of layouts">
-      <img [src]="layout.url" class="w-full h-auto rounded-lg object-cover" alt="{{ layout.name }}">
+    <h2 class="text-4xl font-semibold text-center mb-6">Layouts</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let layout of layouts">
+        <img [src]="layout.url" class="w-full h-auto rounded-lg object-cover" alt="{{ layout.name }}">
+      </div>
+    </div>
+    <!-- Pagination & Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="fas fa-chevron-right"></i>
     </div>
   </div>
-  <!-- Pagination & Navigation -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
 </section>

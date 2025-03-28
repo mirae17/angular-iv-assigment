@@ -1,39 +1,22 @@
-/* General Styles */
-body {
-  font-family: "Poppins", sans-serif; /* Elegant modern font */
-  background-color: #f8f9fa; /* Soft background */
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
 /* Container for the map */
 .container {
   max-width: 100%;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #ffffff, #f2f2f2);
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-}
-
-/* Map Title */
-h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 16px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  position: relative;
 }
 
 /* Map Image */
 img {
   width: 100%;
-  max-width: 800px; /* Adjust map size */
+  max-width: 900px;
   height: auto;
   border-radius: 12px;
+  border: 2px solid #d4af37;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -41,4 +24,82 @@ img {
 img:hover {
   transform: scale(1.02);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Map Link Container */
+.map-link-container {
+  margin-top: 20px;
+}
+
+/* Map Link Button */
+.map-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Button hover effect with a shine */
+.map-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.map-link:hover::before {
+  left: 100%;
+}
+
+.map-link:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  border-color: #d4af37;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* No link message */
+.no-link-message {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 15px;
+    margin: 20px auto;
+  }
+
+  img {
+    max-width: 600px;
+  }
+
+  .map-link {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
 }

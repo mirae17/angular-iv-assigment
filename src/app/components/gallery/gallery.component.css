@@ -1,10 +1,19 @@
+section {
+  padding: 60px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f5f5f5
+  ); /* Clean gradient for elegance */
+}
+
 /* Ensure Swiper is Full Width */
 .swiper {
   width: 90%;
   max-width: 1200px;
-  margin: auto; /* Center the Swiper */
+  margin: auto;
   height: auto;
-  padding-bottom: 50px; /* Space for pagination */
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -25,24 +34,24 @@
 
 /* Set a standard size for all images */
 .swiper-slide img {
-  width: 300px; /* Increase image size */
-  height: 200px;
+  width: 450px; /* Larger images for the gallery */
+  height: 300px;
   object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 2px solid #d4af37; /* Gold border */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Ensure Swiper is Positioned Properly */
-.swiper {
-  position: relative;
-  width: 100%;
+.swiper-slide img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Center Pagination Correctly */
 .swiper-pagination {
   position: absolute !important;
-  bottom: -20px; /* Move it a bit lower */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -56,38 +65,72 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  margin: 0 5px;
-  background: gray;
+  margin: 0 6px;
+  background: #b0b0b0;
   opacity: 0.5;
   transition: all 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-  background: black;
+  background: #d4af37; /* Gold for a classic touch */
   opacity: 1;
   width: 12px;
   height: 12px;
 }
 
-/* Navigation Buttons - Keep Them Fixed */
+/* Navigation Buttons - Custom Styling */
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
   color: white !important;
-  z-index: 15; /* Ensure it's above other elements */
+  z-index: 20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d4af37;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Adjust the button placement */
 .swiper-button-prev {
-  left: 10px; /* Stay within the swiper */
+  left: 10px;
 }
 
 .swiper-button-next {
-  right: 10px; /* Stay within the swiper */
+  right: 10px;
+}
+
+/* Navigation button hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: linear-gradient(135deg, #b0b0b0, #1e3a8a);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Style the Font Awesome icons */
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 20px;
+  color: #fff;
 }

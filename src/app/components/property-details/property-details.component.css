@@ -71,7 +71,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  width: auto;
+  width: 100%;
 }
 
 #bg1 {

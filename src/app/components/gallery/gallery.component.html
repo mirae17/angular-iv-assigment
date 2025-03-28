@@ -1,5 +1,4 @@
-
-<div class="swiper mySwiper">
+<section class="swiper mySwiper">
   <h2 class="text-4xl font-semibold text-center">Gallery</h2>
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let image of galleryImages">
@@ -8,6 +7,10 @@
   </div>
   <!-- Pagination & Navigation -->
   <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+  <div class="swiper-button-prev">
+    <i class="fas fa-chevron-left"></i>
+  </div>
+  <div class="swiper-button-next">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</section>
