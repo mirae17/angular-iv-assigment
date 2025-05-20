@@ -21,10 +21,10 @@ import { MapComponent } from './components/map/map.component';
     GalleryComponent,
     LayoutsComponent,
     DocumentsComponent,
-    MapComponent
+    MapComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   projectData: Project | null = null;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.jsonDataService.getProjectData().subscribe((data: ProjectResponse) => {
       this.projectData = data.content; // Access the content property
-      console.log("AppComponent Project Data:", this.projectData); // Debugging
+      console.log('AppComponent Project Data:', this.projectData); // Debugging
     });
   }
 }

@@ -2,10 +2,18 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { ProjectResponse, Project, PropertyInfo, ProjectDetail, DocumentInfo, Layout, MapInfo } from '../models/project.model'; 
+import {
+  ProjectResponse,
+  Project,
+  PropertyInfo,
+  ProjectDetail,
+  DocumentInfo,
+  Layout,
+  MapInfo,
+} from '../models/project.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class JsonDataService {
   private jsonUrl = '/assets/general.json';
@@ -16,11 +24,12 @@ export class JsonDataService {
     return this.http.get<ProjectResponse>(this.jsonUrl);
   }
 
-  // Other methods remain unchanged
+  // ✅ All the following methods are fixed to extract `.content`
   getProjectDetails(): Observable<ProjectDetail[]> {
     return this.getProjectData().pipe(
-      map(project => {
-        console.log("Mapping Project Details:", project);
+      map((response) => {
+        const project = response.content;
+        console.log('Mapping Project Details:', project);
         return project.projectDetails || [];
       })
     );
@@ -28,34 +37,29 @@ export class JsonDataService {
 
   getPropertyInfo(): Observable<PropertyInfo[]> {
     return this.getProjectData().pipe(
-      map(project => {
-        console.log("Mapping Property Info:", project);
-        return project.propertyInfo || [];
-      })
+      map((response) => response.content.propertyInfo || [])
     );
   }
 
   getGallery(): Observable<string[]> {
     return this.getProjectData().pipe(
-      map(project => project.gallery)
+      map((response) => response.content.gallery || [])
     );
   }
 
   getLayouts(): Observable<Layout[]> {
     return this.getProjectData().pipe(
-      map(project => project.layouts)
+      map((response) => response.content.layouts || [])
     );
   }
 
   getDocuments(): Observable<DocumentInfo[]> {
     return this.getProjectData().pipe(
-      map(project => project.documents)
+      map((response) => response.content.documents || [])
     );
   }
 
-  getMap(): Observable<MapInfo[]> {
-    return this.getProjectData().pipe(
-      map(project => project.map)
-    );
+  getMap(): Observable<MapInfo[] | undefined> {
+    return this.getProjectData().pipe(map((response) => response.content.map));
   }
 }

@@ -1,16 +1,18 @@
-import { TestBed } from '@angular/core/testing';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { ProjectResponse } from '../models/project.model'; // Make sure this path is correct
 
-import { JsonDataService } from './json-data.service';
+@Injectable({
+  providedIn: 'root',
+})
+export class JsonDataService {
+  private projectUrl = 'assets/data/project.json'; // Or your API endpoint
 
-describe('JsonDataService', () => {
-  let service: JsonDataService;
+  constructor(private http: HttpClient) {}
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(JsonDataService);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+  getProjectData(): Observable<ProjectResponse> {
+    //This tells Angular to expect the structure defined in ProjectResponse
+    return this.http.get<ProjectResponse>(this.projectUrl);
+  }
+}

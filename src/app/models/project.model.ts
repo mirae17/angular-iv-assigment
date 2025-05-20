@@ -1,6 +1,8 @@
-export interface ProjectResponse {  
-  response: string;  
-  content: Project;  // ✅ Ensure `content` correctly wraps `Project`
+export interface ProjectResponse {
+  length: number;
+  map: ProjectResponse;
+  response: string;
+  content: Project; // ✅ Ensure `content` correctly wraps `Project`
 }
 
 export interface Project {
@@ -26,7 +28,7 @@ export interface Project {
   descriptionTitle: string;
   descriptionSubTitle: string;
   logo: string;
-  sitePlan?: string | null; 
+  sitePlan?: string | null;
   landSize?: number | null;
   metricUnit?: string | null;
   bumiDiscount?: number | null;
@@ -39,7 +41,7 @@ export interface Project {
   projectDetails: ProjectDetail[];
   propertyInfo: PropertyInfo[];
   documents: DocumentInfo[];
-  map: MapInfo[];
+  map?: MapInfo[];
 }
 
 export interface Layout {
@@ -64,28 +66,28 @@ export interface Layout {
 
 export interface ProjectDetail {
   id: number;
-  metId:number;
-  type:string;
+  metId: number;
+  type: string;
   name: string;
   description: string;
-  param1:string;
-  status:number;
-  createdDatetime:string;
-  updatedDatetime:string;
-  imageUrl?: string|null;
+  param1: string;
+  status: number;
+  createdDatetime: string;
+  updatedDatetime: string;
+  imageUrl?: string | null;
 }
 
 export interface PropertyInfo {
   id: number;
-  metId:number;
-  type:string;
+  metId: number;
+  type: string;
   name: string;
   description: string;
-  param1: string; 
-  status:number;
-  createdDatetime:string;
-  updatedDatetime:string;
-  imageUrl?: string|null;  
+  param1: string;
+  status: number;
+  createdDatetime: string;
+  updatedDatetime: string;
+  imageUrl?: string | null;
 }
 
 export interface DocumentInfo {
@@ -95,9 +97,6 @@ export interface DocumentInfo {
 }
 
 export interface MapInfo {
-  id: number;
   url: string;
+  link: string;
 }
-
-
-

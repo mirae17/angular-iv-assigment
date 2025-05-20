@@ -8,28 +8,29 @@ import { Project, ProjectResponse } from '../../models/project.model';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project-overview.component.html',
-  styleUrls: ['./project-overview.component.css']
+  styleUrls: ['./project-overview.component.css'],
 })
 export class ProjectOverviewComponent implements OnInit {
-  project: Project | null = null; 
-errorMessage:String | null = null;
+  project: Project | null = null;
+  errorMessage: String | null = null;
 
   constructor(private jsonDataService: JsonDataService) {}
 
   ngOnInit(): void {
     this.jsonDataService.getProjectData().subscribe({
-      next: (data: Project) => {
-        if (data) {
-          this.project = data;
+      next: (response: ProjectResponse) => {
+        if (response && response.content) {
+          this.project = response.content;
         } else {
-          console.error("No project data received");
-          this.errorMessage = "No project data available.";
+          console.error('No project data received');
+          this.errorMessage = 'No project data available.';
         }
       },
       error: (err) => {
-        console.error("Error in subscription:", err);
-        this.errorMessage = "Failed to load project data. Please try again later.";
-      }
+        console.error('Error in subscription:', err);
+        this.errorMessage =
+          'Failed to load project data. Please try again later.';
+      },
     });
   }
 }
